@@ -6,7 +6,7 @@ function getIssues() {
       headers: {
         Authorization: `token ${getToken()}`
       }
-  }).then(resp => resp.json()
+  }).then(resp => resp.json())
 }
 
 function showIssues(json) {
@@ -66,5 +66,5 @@ function forkRepo() {
 function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
-  return 'ae78be089453f4d228e81399de65a8b4b057ebbc';
+  return '';
 }
